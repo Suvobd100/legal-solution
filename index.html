@@ -3,18 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <!-- daisyUI -->
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Legal Solution</title>
+
+    <!-- <style>
+        .font-garamond{
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 400;
+        font-style: normal;
+                        }
+    </style> -->
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#B68C5A',
+                secondary: '#111111CC',
+                body: '#FFFFFF',
+              },
+              
+              fontFamily:{
+                garamond:["Cormorant Garamond", "serif"]
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body>
-    <head> <h1 class="text-5xl text-blue-500 text-center">legal-solution</h1></head>
+<body class="font-garamond">
+    <header class="w-11/12 mx-auto">
+        <!-- nav start -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+             <div class="flex items-center">
+                <!-- law img -->
+                <img src="./images/business.png" class="h-7" alt="">
+                <a class="btn btn-ghost text-2xl">Justice</a>
+             </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>HOME <i class=" h-5 w-5 inline-flex justify-center items-center text-slate-300
+                    fa-solid fa-chevron-right"></i></a> </li>
+                <li><a>Service <i class=" h-5 w-5 inline-flex justify-center items-center text-slate-300
+                    fa-solid fa-chevron-right"></i></a></li>
+                <li><a>Case <i class=" h-5 w-5 inline-flex justify-center items-center text-slate-300
+                    fa-solid fa-chevron-right"></i></a></li>
+                <li><a>Blog <i class=" h-5 w-5 inline-flex justify-center items-center text-slate-300
+                    fa-solid fa-chevron-right"></i></a></li>
+                <li><a>Contact us <i class=" h-5 w-5 inline-flex justify-center items-center text-slate-300
+                    fa-solid fa-chevron-right"></i></a></li>
+                
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn bg-primary text-body text-2xl">Free Consultation</a>
+            </div>
+        </div>
+        <!-- nav end -->
+
+    </header>
     <main></main>
     <footer></footer>
 </body>
